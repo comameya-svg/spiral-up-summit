@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Spiral up!!｜誰かのための一歩が自分たちの未来を切り開く！ いい(11)チーム オンラインサミット</title>
+<meta name="description" content="7名の登壇者が、それぞれの“一歩”の物語を語るオンラインサミット。2026年10月12日(月・祝)10:00〜11:00 Zoomで開催。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky-50:#f2f9ff; --sky-100:#e3f2fd; --sky-300:#9fd3f5; --sky-500:#4aa8e0;
+  --navy:#1d3a6b; --text:#2b3a55; --muted:#5a6a85;
+  --sun:#f6b915; --sun-soft:#fff4cc; --sun-line:#d99a00; --leaf:#7cc243;
+  --card:#ffffff; --bg:#ffffff; --line:#d5e8f6;
+  --cta:#16a34a; --cta-h:#0f7a37;
+  --panel:rgba(255,255,255,.86);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --sky-50:#13233a; --sky-100:#172a45; --sky-300:#2e5680; --sky-500:#6cbcf0;
+    --navy:#e6eef8; --text:#d6e1ef; --muted:#a3b3c8;
+    --sun:#f6c54a; --sun-soft:#3d3416; --sun-line:#f6c54a;
+    --card:#1a2d47; --bg:#0f1c2e; --line:#2a4466;
+    --panel:rgba(15,28,46,.84);
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Noto Sans JP",sans-serif;color:var(--text);background:var(--bg);line-height:1.85;font-size:16px;line-break:strict;word-break:normal;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.u{display:inline-block}
+.nw{white-space:nowrap}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.maru{font-family:"Zen Maru Gothic",sans-serif;color:var(--navy);line-height:1.45;word-break:keep-all}
+.eleven{color:var(--sun-line)}
+section{padding:88px 0}
+.sec-title{font-size:clamp(26px,3.4vw,36px);font-weight:900;text-align:center;margin-bottom:44px}
+.sec-title:has(+ .sec-lead){margin-bottom:14px}
+.sec-title::after{content:"";display:block;width:64px;height:6px;border-radius:3px;background:var(--sun);margin:14px auto 0}
+.sec-lead{text-align:center;color:var(--muted);margin-bottom:44px}
+.hand{font-family:"Caveat",cursive;color:var(--navy);font-weight:700;position:relative;display:inline-block;line-height:1}
+.hand::after{content:"";position:absolute;left:4%;right:-2%;bottom:-8px;height:5px;border-radius:3px;background:var(--sun);transform:rotate(-3deg)}
+
+/* 要確認タグ */
+.tbd{display:inline-block;background:var(--sun-soft);border:2px dashed var(--sun-line);color:#6b4a00;border-radius:6px;padding:0 8px;font-size:.88em;font-weight:700;line-height:1.7;margin:2px 2px;word-break:keep-all;overflow-wrap:anywhere}
+@media (prefers-color-scheme: dark){.tbd{color:#ffe08a}}
+.draftbar{background:var(--sun-soft);border-bottom:2px dashed var(--sun-line);color:var(--navy);text-align:center;font-size:13px;font-weight:700;padding:6px 16px}
+
+/* 画像スロット */
+.img-slot{position:relative;overflow:hidden;background:var(--sky-100);border-radius:20px}
+.img-slot:not(.img-filled)::before{content:"画像準備中";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+.img-slot img{width:100%;height:100%;object-fit:cover}
+
+/* CTA */
+.cta{display:inline-flex;align-items:center;justify-content:center;background:var(--cta);color:#fff;text-decoration:none;font-family:"Zen Maru Gothic",sans-serif;font-weight:900;border:none;border-radius:999px;cursor:pointer;box-shadow:0 8px 20px rgba(22,163,74,.28);animation:ctaPulse 1.7s ease-in-out infinite;transition:background .2s;word-break:keep-all;text-align:center}
+.cta:hover{background:var(--cta-h)}
+.cta::after{content:"";width:0;height:0;border-left:8px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:14px}
+.cta.sm{font-size:18px;padding:16px 40px}
+.cta.lg{font-size:clamp(20px,2.6vw,26px);padding:24px 64px}
+@keyframes ctaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.055)}}
+@media (prefers-reduced-motion: reduce){.cta{animation:none}}
+.micro{font-size:13px;color:var(--muted);margin-top:12px}
+
+/* FV */
+.fv{position:relative;padding:0;min-height:640px;display:flex;align-items:center}
+.fv-bg{position:absolute;inset:0;border-radius:0}
+.fv-inner{position:relative;width:100%;padding:72px 24px 88px}
+.fv-panel{max-width:760px;margin:0 auto;text-align:center;background:var(--panel);backdrop-filter:blur(4px);border-radius:28px;padding:40px 44px;box-shadow:0 20px 50px rgba(29,58,107,.14)}
+.eyebrow{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;color:var(--navy);font-size:15px;letter-spacing:.04em;margin-bottom:12px}
+.eyebrow .team{font-weight:900;font-size:18px}
+.fv-title{margin:6px 0 40px;line-height:1}
+.fv-title .hand{font-size:clamp(64px,9vw,112px);transform:rotate(-4deg);letter-spacing:.01em}
+.fv-title .hand::after{height:8px;bottom:-12px;border-radius:4px}
+.fv-sub{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;color:var(--navy);font-size:clamp(20px,2.6vw,28px);line-height:1.6;margin-bottom:18px;word-break:keep-all}
+.fv-sub .mk{background:linear-gradient(transparent 68%,var(--sun) 68%)}
+.fv .lead{font-size:16px;margin-bottom:22px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;justify-content:center}
+.chip{background:var(--card);border:2px solid var(--sky-300);color:var(--navy);font-weight:700;border-radius:999px;padding:6px 16px;font-size:15px}
+
+/* S02 */
+.s02{background:var(--sky-50)}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.who li{list-style:none;background:var(--card);border-radius:22px;padding:36px 28px 30px;position:relative;box-shadow:0 10px 30px rgba(29,58,107,.08);font-weight:500}
+.num{width:54px;height:54px;border-radius:50%;background:var(--sun);color:#1d3a6b;font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.who-close{text-align:center;margin-top:40px;font-family:"Zen Maru Gothic",sans-serif;font-weight:700;color:var(--navy);font-size:19px}
+
+/* S03 */
+.gain{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.gain .img-slot{aspect-ratio:4/3}
+.gain h2{text-align:left}
+.gain h2::after{margin-left:0}
+.checks{list-style:none;margin-top:28px}
+.checks li{position:relative;padding:14px 0 14px 40px;border-bottom:1px dashed var(--line);font-weight:500}
+.checks li::before{content:"";position:absolute;left:4px;top:22px;width:18px;height:18px;border-radius:50%;background:var(--leaf);box-shadow:0 0 0 5px rgba(124,194,67,.2)}
+
+/* CTA帯 */
+.cta-band{background:var(--sky-100);text-align:center;padding:72px 0}
+.cta-band .pre{font-family:"Zen Maru Gothic",sans-serif;font-weight:700;color:var(--navy);font-size:clamp(18px,2.2vw,22px);margin-bottom:24px}
+.cta-white{background:var(--bg)}
+.cta-white .pre{font-size:clamp(24px,3.2vw,34px);font-weight:900}
+
+/* S05 登壇者 */
+.speakers{display:flex;flex-wrap:wrap;justify-content:center;gap:22px}
+.spk{width:calc((100% - 66px)/4);background:var(--card);border:2px solid var(--line);border-radius:22px;padding:28px 20px 24px;text-align:center}
+.spk .ph{width:132px;height:132px;border-radius:50%;margin:0 auto 14px;background:#fff;border:4px solid var(--sky-300);overflow:hidden;box-shadow:0 6px 16px rgba(29,58,107,.12)}
+.spk .ph img{width:100%;height:100%;object-fit:cover;border-radius:50%;background:#fff}
+.spk .spk-name{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;color:var(--navy);font-size:19px;margin:4px 0 6px}
+.spk .lbl{font-family:"Caveat",cursive;font-size:22px;color:var(--sun-line);letter-spacing:.04em}
+.spk p{font-size:14px;margin-top:6px}
+.after-spk{text-align:center;margin-top:48px}
+
+/* S06 タイムライン */
+.s06{background:var(--sky-50)}
+.tl{max-width:720px;margin:0 auto;list-style:none;position:relative}
+.tl::before{content:"";position:absolute;left:118px;top:10px;bottom:10px;width:4px;border-radius:2px;background:var(--sky-300)}
+.tl li{display:grid;grid-template-columns:100px 1fr;gap:40px;padding:16px 0;position:relative;align-items:start}
+.tl li::before{content:"";position:absolute;left:111px;top:26px;width:18px;height:18px;border-radius:50%;background:var(--sun);border:3px solid var(--bg)}
+.tl .t{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;color:var(--navy);text-align:right;font-size:20px;line-height:1.6}
+.tl .d{background:var(--card);border-radius:14px;padding:12px 20px;font-weight:500;box-shadow:0 6px 18px rgba(29,58,107,.06)}
+
+/* S07 Spiral */
+.s07{position:relative;padding:0;overflow:hidden}
+.s07 .img-slot{position:absolute;inset:0;border-radius:0}
+.s07-inner{position:relative;padding:110px 24px}
+.s07-card{max-width:720px;margin:0 auto;background:var(--panel);border-radius:28px;padding:52px 48px;text-align:center;box-shadow:0 20px 50px rgba(29,58,107,.14)}
+.s07 .hand{font-size:clamp(52px,8vw,92px);margin-bottom:26px;transform:rotate(-6deg)}
+.s07 h2{font-size:clamp(24px,3.2vw,34px);font-weight:900;margin-bottom:22px}
+.s07 .body p{margin-bottom:4px}
+.s07 .first{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;color:var(--navy);font-size:20px;margin:22px 0 0}
+.s07 .team-note{font-size:14px;color:var(--muted)}
+
+/* S08 STEP */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;list-style:none}
+.steps li{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:30px 24px;position:relative;text-align:center}
+.steps li:not(:last-child)::after{content:"";position:absolute;right:-30px;top:50%;transform:translateY(-50%);border-left:16px solid var(--sky-300);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.steps .st{font-family:"Caveat",cursive;font-size:30px;color:var(--sun-line);line-height:1;margin-bottom:10px}
+.steps p{font-weight:500}
+.steps small{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+.steps-note{text-align:center;margin-top:32px;font-size:15px}
+
+/* S10 概要 */
+.s10{background:var(--sky-50)}
+.outline{max-width:780px;margin:0 auto;background:var(--card);border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(29,58,107,.08)}
+.outline div{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid var(--line)}
+.outline div:last-child{border-bottom:none}
+.outline dt{background:var(--sky-100);color:var(--navy);font-weight:700;padding:16px 20px}
+.outline dd{padding:16px 22px}
+
+/* S11 FAQ */
+.faq{max-width:780px;margin:0 auto}
+.faq details{background:var(--card);border:2px solid var(--line);border-radius:16px;margin-bottom:14px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 22px;font-weight:700;color:var(--navy);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:22px;top:50%;width:10px;height:10px;border-right:3px solid var(--sky-500);border-bottom:3px solid var(--sky-500);transform:translateY(-70%) rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq .a{padding:0 22px 20px}
+
+/* S12 フォーム */
+.s12{position:relative;padding:0;overflow:hidden}
+.s12 .img-slot{position:absolute;inset:0;border-radius:0}
+.s12-inner{position:relative;padding:100px 24px 110px}
+.s12-veil{position:absolute;inset:0;background:rgba(255,255,255,.35)}
+@media (prefers-color-scheme: dark){.s12-veil{background:rgba(15,28,46,.45)}}
+.form-card{position:relative;max-width:600px;margin:0 auto;background:var(--card);border-radius:28px;padding:48px 44px;box-shadow:0 24px 60px rgba(29,58,107,.2);text-align:center}
+.form-card h2{font-size:clamp(26px,3.4vw,36px);font-weight:900;margin-bottom:12px}
+.form-card .lead{margin-bottom:28px}
+.form-card label{display:block;text-align:left;font-weight:700;color:var(--navy);font-size:15px;margin-bottom:6px}
+.form-card label .req{display:inline-block;background:#e0484a;color:#fff;font-size:11px;border-radius:4px;padding:0 6px;margin-left:8px;vertical-align:2px}
+.form-card input{width:100%;font:inherit;padding:14px 16px;border:2px solid var(--line);border-radius:12px;margin-bottom:18px;background:var(--bg);color:var(--text)}
+.form-card input:focus{outline:none;border-color:var(--sky-500)}
+.form-card .cta{width:100%;margin-top:6px}
+.privacy{font-size:12.5px;color:var(--muted);margin-top:16px;text-align:left}
+.form-note{font-size:13px;margin-top:10px;text-align:left}
+.s12-spiral{font-size:clamp(40px,5vw,60px);margin-top:34px;transform:rotate(-6deg)}
+
+.form-card .err{color:#d33b3d;font-size:13px;text-align:left;margin:-10px 0 14px;min-height:0}
+.thanks h2{margin-top:6px}
+.thanks-badge{display:inline-block;background:var(--sun);color:#1d3a6b;font-family:"Zen Maru Gothic",sans-serif;font-weight:900;font-size:14px;border-radius:999px;padding:4px 16px}
+.oc-box{margin-top:28px;border:3px solid var(--sky-300);border-radius:22px;padding:28px 24px;background:var(--sky-50)}
+.oc-step{font-family:"Caveat",cursive;color:var(--sun-line);font-size:24px;line-height:1}
+.oc-title{font-family:"Zen Maru Gothic",sans-serif;font-weight:900;color:var(--navy);font-size:19px;line-height:1.6;margin:10px 0 10px}
+.oc-text{font-size:14px;color:var(--muted);margin-bottom:20px}
+.thanks .oc-btn{width:auto}
+.oc-qr{display:flex;align-items:center;gap:18px;margin-top:22px;text-align:left;font-size:13px;color:var(--muted)}
+.oc-qr img{width:120px;height:120px;border-radius:10px;background:#fff;padding:4px;flex:none}
+footer{background:#1d3a6b;color:#e6eef8;text-align:center;padding:32px 16px;font-size:14px}
+footer .eleven{color:var(--sun)}
+
+/* SP固定バー */
+.sp-bar{display:none}
+
+/* ===== SP ===== */
+@media (max-width:768px){
+  body{font-size:15px}
+  section{padding:64px 0}
+  .wrap{padding:0 18px}
+  .u{white-space:normal;word-break:keep-all;overflow-wrap:anywhere}
+  .fv{min-height:auto}
+  .fv-inner{padding:40px 14px 48px}
+  .fv-panel{padding:28px 22px}
+  .fv-title .hand{font-size:60px}
+  .fv-sub{font-size:19px}
+  .chip{font-size:14px;padding:5px 12px}
+  .cta.sm{font-size:17px;padding:15px 26px;width:100%}
+  .cta.lg{font-size:19px;padding:20px 22px;width:100%}
+  .who{grid-template-columns:1fr;gap:16px}
+  .who li{padding:24px 22px;display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:center}
+  .num{width:48px;height:48px;font-size:22px;margin:0}
+  .gain{grid-template-columns:1fr;gap:28px}
+  .spk{width:calc((100% - 14px)/2);padding:20px 12px}
+  .speakers{gap:14px}
+  .spk .ph{width:100px;height:100px}
+  .tl::before{left:70px}
+  .tl li{grid-template-columns:56px 1fr;gap:30px}
+  .tl li::before{left:63px}
+  .tl .t{font-size:16px}
+  .s07-inner{padding:72px 14px}
+  .s07-card{padding:36px 20px}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .steps li:not(:last-child)::after{right:50%;top:auto;bottom:-28px;transform:translateX(50%);border-left:12px solid transparent;border-right:12px solid transparent;border-top:16px solid var(--sky-300);border-bottom:none}
+  .outline div{grid-template-columns:1fr}
+  .outline dt{padding:10px 18px}
+  .outline dd{padding:12px 18px}
+  .s12-inner{padding:64px 14px 72px}
+  .form-card{padding:34px 22px}
+  .sp-bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--panel);backdrop-filter:blur(6px);box-shadow:0 -6px 20px rgba(29,58,107,.12);transition:transform .25s}
+  .sp-bar .cta{width:100%;font-size:17px;padding:14px 18px}
+  .sp-bar.hide{transform:translateY(110%)}
+  footer{padding-bottom:100px}
+  .oc-box{padding:22px 16px}
+  .thanks .oc-btn{width:100%}
+  .oc-qr{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="draftbar">打ち合わせ用の仮版です。黄色い枠の箇所は未確定です。</div>
+
+<!-- S01 FV -->
+<section class="fv" id="top">
+  <!-- IMG-PROMPT: 明るく爽やかな晴れた朝の青空の風景イラスト。やわらかく淡い虹が画面上部を大きく横切り、右上から朝日の光がやさしく差し込む。画面の左右の端と下端を、陽に透けた明るい若葉の枝が縁取り、白い小さな花も少し。下部には遠くに緑の丘と、海辺の街並み、橋がかすんで見える。画面中央から左側は広い空と白い雲の余白を大きく残す（後から文字を重ねるため）。水彩とアニメ背景美術の中間のような、清潔で透明感のある色調。空色・若葉の黄緑・ほんのり黄色の光。暗い色・ネオン・ホログラムは使わない。画像内に文字を一切入れない。縦横比16:9。 -->
+  <div class="img-slot fv-bg img-filled" data-slot="img01"><img src="assets/img01.jpg" alt="虹がかかる青空と、若葉の向こうに広がる海辺の街"></div>
+  <div class="wrap fv-inner">
+    <div class="fv-panel">
+      <p class="eyebrow"><span class="team nw">いい(<span class="eleven">11</span>)チーム</span> presents　<span class="nw">オンラインサミット</span></p>
+      <h1 class="fv-title"><span class="hand">Spiral up!!</span></h1>
+      <p class="fv-sub"><span class="u">誰かのための</span><span class="u">一歩が、</span><br><span class="u mk">自分たちの未来を</span><span class="u mk">切り開く！</span></p>
+      <p class="lead"><span class="u">7名の登壇者が、</span><span class="u">それぞれの「一歩」の</span><span class="u">物語を語ります。</span><br><span class="u">聞き終えたとき、</span><span class="u">あなたの次の一歩も</span><span class="u">きっと見えてくる。</span></p>
+      <div class="chips">
+        <span class="chip nw">2026年10月12日(月・祝) 10:00〜11:00</span>
+        <span class="chip nw">Zoomオンライン開催</span>
+        <span class="chip nw">登壇者 7名</span>
+      </div>
+      <a class="cta sm" href="#entry"><span class="u">サミットに参加を</span><span class="u">申し込む</span></a>
+      <p class="micro"><span class="u">入力はお名前と</span><span class="u">メールアドレスだけ。</span><span class="u">参加方法は</span><span class="u">メールでご案内します。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- S02 -->
+<section class="s02">
+  <div class="wrap">
+    <h2 class="sec-title">こんな想いがある方へ</h2>
+    <ol class="who">
+      <li><span class="num">1</span><span><span class="u">誰かの役に立ちたい。</span><span class="u">でも、何から始めればいいか</span><span class="u">迷っている</span></span></li>
+      <li><span class="num">2</span><span><span class="u">自分の経験や強みを、</span><span class="u">仕事や活動に</span><span class="u">どう活かせるか知りたい</span></span></li>
+      <li><span class="num">3</span><span><span class="u">一人で頑張ることに</span><span class="u">少し疲れて、</span><span class="u">前向きな仲間と</span><span class="u">つながりたい</span></span></li>
+    </ol>
+    <p class="who-close"><span class="u">ひとつでも当てはまったら、</span><span class="u">このサミットは</span><span class="u">あなたのための時間です。</span></p>
+  </div>
+</section>
+
+<!-- S03 -->
+<section class="s03">
+  <div class="wrap gain">
+    <!-- IMG-PROMPT: 明るい自然光が入る日本の住宅のリビングで、30代〜50代の日本人の男女が数名、それぞれ自宅からノートパソコンでオンラインのイベントに参加している様子を想起させる1枚。手前に1人の40代の日本人女性がノートパソコンの画面を見ながら、穏やかに笑ってうなずいている。画面は斜め後ろからで内容は読めない。テーブルにはマグカップとノート、窓の外に青空と緑。ドキュメンタリー調の実写写真、自然な表情、温かい雰囲気。画像内に文字を一切入れない。画面の文字・ロゴも写さない。縦横比4:3。 -->
+    <div class="img-slot img-filled" data-slot="img02"><img src="assets/img02.jpg" alt="自宅からオンラインのイベントに笑顔で参加する女性" loading="lazy"></div>
+    <div>
+      <h2 class="sec-title"><span class="u">このサミットで</span><span class="u">持ち帰れるもの</span></h2>
+      <ul class="checks">
+        <li><span class="u">7名それぞれの「最初の一歩」を、</span><span class="u">具体的な話で聞ける</span></li>
+        <li><span class="u">誰かのための行動が、</span><span class="u">自分の仕事や未来に</span><span class="u">どうつながるのかが見える</span></li>
+        <li><span class="u">明日から試せる、</span><span class="u">小さな一歩のヒントが</span><span class="u">見つかる</span></li>
+        <li><span class="u">同じ想いを持つ仲間と</span><span class="u">出会うきっかけができる</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- S04 CTA② -->
+<section class="cta-band">
+  <div class="wrap">
+    <p class="pre"><span class="u">当日はZoomで、</span><span class="u">ご自宅から</span><span class="u">気軽にご参加いただけます。</span></p>
+    <a class="cta lg" href="#entry"><span class="u">サミットに参加を</span><span class="u">申し込む</span></a>
+    <p class="micro"><span class="u">入力はお名前と</span><span class="u">メールアドレスだけ。</span><span class="u">参加方法は</span><span class="u">メールでご案内します。</span></p>
+  </div>
+</section>
+
+<!-- S05 登壇者 -->
+<section class="s05">
+  <div class="wrap">
+    <h2 class="sec-title">登壇者紹介</h2>
+    <p class="sec-lead"><span class="u">立場も経験もちがう7名が、</span><span class="u">それぞれの「一歩」を語ります。</span></p>
+    <div class="speakers">
+      <div class="spk"><div class="ph"><img src="assets/spk01.jpg" alt="横田潤一郎" width="400" height="400" loading="lazy"></div><div class="lbl">SPEAKER 01</div><p class="spk-name"><span class="nw">横田潤一郎</span></p><p>肩書き<span class="tbd">【要確認】</span></p><p>講演テーマ<span class="tbd">【要確認】</span></p></div>
+      <div class="spk"><div class="ph"><img src="assets/spk02.jpg" alt="大村知美" width="400" height="400" loading="lazy"></div><div class="lbl">SPEAKER 02</div><p class="spk-name"><span class="nw">大村知美</span></p><p>肩書き<span class="tbd">【要確認】</span></p><p>講演テーマ<span class="tbd">【要確認】</span></p></div>
+      <div class="spk"><div class="ph"><img src="assets/spk03.jpg" alt="前田英志" width="400" height="400" loading="lazy"></div><div class="lbl">SPEAKER 03</div><p class="spk-name"><span class="nw">前田英志</span></p><p>肩書き<span class="tbd">【要確認】</span></p><p>講演テーマ<span class="tbd">【要確認】</span></p></div>
+      <div class="spk"><div class="ph"><img src="assets/spk04.jpg" alt="パルちゃん" width="400" height="400" loading="lazy"></div><div class="lbl">SPEAKER 04</div><p class="spk-name"><span class="nw">パルちゃん</span></p><p>肩書き<span class="tbd">【要確認】</span></p><p>講演テーマ<span class="tbd">【要確認】</span></p></div>
+      <div class="spk"><div class="ph"><img src="assets/spk05.jpg" alt="しげちゃん" width="400" height="400" loading="lazy"></div><div class="lbl">SPEAKER 05</div><p class="spk-name"><span class="nw">しげちゃん</span></p><p>肩書き<span class="tbd">【要確認】</span></p><p>講演テーマ<span class="tbd">【要確認】</span></p></div>
+      <div class="spk"><div class="ph"><img src="assets/spk06.jpg" alt="せいのん" width="400" height="400" loading="lazy"></div><div class="lbl">SPEAKER 06</div><p class="spk-name"><span class="nw">せいのん</span></p><p>肩書き<span class="tbd">【要確認】</span></p><p>講演テーマ<span class="tbd">【要確認】</span></p></div>
+      <div class="spk"><div class="ph"><img src="assets/spk07.jpg" alt="吉田宇洋" width="400" height="400" loading="lazy"></div><div class="lbl">SPEAKER 07</div><p class="spk-name"><span class="nw">吉田宇洋</span></p><p>肩書き<span class="tbd">【要確認】</span></p><p>講演テーマ<span class="tbd">【要確認】</span></p></div>
+    </div>
+    <div class="after-spk">
+      <a class="cta sm" href="#entry"><span class="u">サミットに参加を</span><span class="u">申し込む</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- S06 タイムテーブル -->
+<section class="s06">
+  <div class="wrap">
+    <h2 class="sec-title">当日のプログラム</h2>
+    <ol class="tl">
+      <li><span class="t nw">10:00</span><span class="d">開会・オープニング</span></li>
+      <li><span class="t">&nbsp;</span><span class="d"><span class="u">登壇者7名による</span><span class="u">セッション</span></span></li>
+      <li><span class="t">&nbsp;</span><span class="d"><span class="u">クロージング・</span><span class="u">全体の振り返り</span></span></li>
+      <li><span class="t nw">11:00</span><span class="d">終了</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- S07 Spiral up!! -->
+<section class="s07">
+  <!-- IMG-PROMPT: 朝の明るい自然光の中、緑の木々に囲まれたゆるやかにカーブする屋外のらせん階段を、下から見上げた構図。階段の先には青空と白い雲、うっすらと虹。若葉が光に透けている。人物はいない。上へのぼっていく前向きな気持ちを感じさせる、清潔で爽やかな色調。ドキュメンタリー調の実写写真。画像内に文字を一切入れない。縦横比3:2。 -->
+  <div class="img-slot img-filled" data-slot="img03"><img src="assets/img03.jpg" alt="若葉に囲まれ、青空へ向かってのびるらせん階段" loading="lazy"></div>
+  <div class="s07-inner">
+    <div class="s07-card">
+      <span class="hand">Spiral up!!</span>
+      <h2><span class="u">ひとりの一歩が、</span><span class="u">みんなを上へ。</span></h2>
+      <div class="body">
+        <p><span class="u">誰かのために踏み出した一歩は、</span><span class="u">その人の背中を押します。</span></p>
+        <p><span class="u">背中を押された誰かの一歩が、</span><span class="u">また別の誰かを動かしていく。</span></p>
+        <p><span class="u">そうやって、</span><span class="u">らせん階段をのぼるように、</span><span class="u">みんなで少しずつ上へ。</span></p>
+        <p><span class="u">私たち、<span class="nw">いい(<span class="eleven">11</span>)チーム</span>は、</span><span class="u">これを「Spiral up」と</span><span class="u">呼んでいます。</span></p>
+      </div>
+      <p class="first"><span class="u">このサミットは、</span><span class="u">その最初の一段です。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- S08 参加までの流れ -->
+<section class="s08">
+  <div class="wrap">
+    <h2 class="sec-title">参加までの流れ</h2>
+    <ol class="steps">
+      <li><div class="st">STEP 1</div><p><span class="u">このページの</span><span class="u">フォームから申し込む</span></p><small><span class="u">（お名前と</span><span class="u">メールアドレスだけ）</span></small></li>
+      <li><div class="st">STEP 2</div><p><span class="u">参加方法のご案内を</span><span class="u">メールで受け取る</span></p></li>
+      <li><div class="st">STEP 3</div><p><span class="u">当日、</span><span class="u">ZoomのURLから</span><span class="u">参加する</span></p></li>
+    </ol>
+    <p class="steps-note"><span class="u">お申し込みの完了画面から、</span><span class="u">参加者用の</span><span class="u">LINEオープンチャット</span><span class="u">「Spiral up!!サミット」に</span><span class="u">ご参加いただけます。</span></p>
+  </div>
+</section>
+
+<!-- S09 CTA③ -->
+<section class="cta-band cta-white">
+  <div class="wrap">
+    <p class="pre"><span class="u">あなたの一歩を、</span><span class="u nw">10月12日に。</span></p>
+    <a class="cta lg" href="#entry"><span class="u">サミットに参加を</span><span class="u">申し込む</span></a>
+    <p class="micro"><span class="u">入力はお名前と</span><span class="u">メールアドレスだけ。</span><span class="u">参加方法は</span><span class="u">メールでご案内します。</span></p>
+  </div>
+</section>
+
+<!-- S10 開催概要 -->
+<section class="s10">
+  <div class="wrap">
+    <h2 class="sec-title">開催概要</h2>
+    <dl class="outline">
+      <div><dt>名称</dt><dd><span class="u">誰かのための一歩が</span><span class="u">自分たちの未来を切り開く！</span></dd></div>
+      <div><dt>日時</dt><dd><span class="nw">2026年10月12日(月・祝)</span> <span class="nw">10:00〜11:00</span></dd></div>
+      <div><dt>形式</dt><dd>Zoomによるオンライン開催</dd></div>
+      <div><dt>登壇者</dt><dd>7名</dd></div>
+      <div><dt>参加費</dt><dd>無料</dd></div>
+      <div><dt>主催</dt><dd><span class="nw">いい(<span class="eleven">11</span>)チーム</span></dd></div>
+      <div><dt>申込方法</dt><dd>このページのフォームから</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- S11 FAQ -->
+<section class="s11">
+  <div class="wrap">
+    <h2 class="sec-title">よくある質問</h2>
+    <div class="faq">
+      <details><summary>Q. 顔出しは必要ですか？</summary><div class="a">A. <span class="u">顔出しは必要ありません。</span><span class="u">カメラはオフのままで、</span><span class="u">聞くだけのご参加も大歓迎です。</span><span class="u">気軽にのぞいてみてください。</span></div></details>
+      <details><summary>Q. <span class="u">途中から参加したり、</span><span class="u">途中で退出することは</span><span class="u">可能ですか？</span></summary><div class="a">A. <span class="u">はい、可能です。</span><span class="u">途中からのご参加も、</span><span class="u">途中でのご退出も自由です。</span><span class="u">ご都合に合わせて</span><span class="u">ご参加ください。</span></div></details>
+      <details><summary>Q. 録画・アーカイブはありますか？</summary><div class="a">A. <span class="u">はい、アーカイブ配信があります。</span><span class="u">当日ご都合がつかない方も、</span><span class="u">あとからご覧いただけます。</span></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- S12 フォーム＋クロージング -->
+<section class="s12" id="entry">
+  <!-- IMG-PROMPT: 朝日が差す見晴らしのよい丘の上の小道。手前の足元に、一歩を踏み出したスニーカーの足が写る（人物は足元だけ）。小道は青空と遠くの海辺の街へ向かって続き、道の両脇に若葉と小さな白い花。空にはやわらかな虹がかすかに見える。明るい自然光、爽やかで希望を感じる色調。画面中央に余白の空を広めに残す。ドキュメンタリー調の実写写真。画像内に文字を一切入れない。縦横比16:9。 -->
+  <div class="img-slot img-filled" data-slot="img04"><img src="assets/img04.jpg" alt="青空と海を望む丘の小道で、一歩を踏み出す足元" loading="lazy"></div>
+  <div class="s12-veil"></div>
+  <div class="s12-inner">
+    <form class="form-card" id="entry-form" novalidate>
+      <h2><span class="u">次の一歩は、</span><span class="u">ここから。</span></h2>
+      <p class="lead"><span class="u">誰かのための一歩が、</span><span class="u">自分たちの未来を切り開く。</span><br><span class="u nw">10月12日、</span><span class="u">Zoomでお会いしましょう。</span></p>
+      <label for="f-name">お名前<span class="req">必須</span></label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+      <label for="f-mail">メールアドレス<span class="req">必須</span></label>
+      <input id="f-mail" name="email" type="email" autocomplete="email" required>
+      <button class="cta sm" type="submit"><span class="u">サミットに参加を</span><span class="u">申し込む</span></button>
+      <p class="privacy"><span class="u">ご登録の情報は、</span><span class="u">本サミットのご案内と</span><span class="u">運営のためにのみ使用します。</span></p>
+      <span class="hand s12-spiral">Spiral up!!</span>
+    </form>
+    <div class="form-card thanks" id="thanks" hidden tabindex="-1">
+      <p class="thanks-badge">お申し込み完了</p>
+      <h2><span class="u">お申し込み</span><span class="u">ありがとうございます！</span></h2>
+      <p class="lead"><span class="u">ご登録のメールアドレスに、</span><span class="u">参加方法のご案内を</span><span class="u">お送りします。</span></p>
+      <div class="oc-box">
+        <p class="oc-step"><span class="nw">最後にもう一歩</span></p>
+        <p class="oc-title"><span class="u">参加者用の</span><span class="u">LINEオープンチャット</span><span class="u">「Spiral up!!サミット」に</span><span class="u">ご参加ください</span></p>
+        <p class="oc-text"><span class="u">当日までのお知らせや、</span><span class="u">参加者どうしの交流に使います。</span><span class="u">ニックネームで参加でき、</span><span class="u">LINEの友だちに</span><span class="u">知られることはありません。</span></p>
+        <a class="cta sm oc-btn" href="https://line.me/ti/g2/1VQTW2Qp9fIKYfvV96xRIrdWeFvqh0HdLdySVg" target="_blank" rel="noopener"><span class="u">オープンチャットに</span><span class="u">参加する</span></a>
+        <div class="oc-qr">
+          <img src="assets/openchat-qr.png" alt="オープンチャット「Spiral up!!サミット」の参加用QRコード" width="160" height="160">
+          <p><span class="u">パソコンでご覧の方は、</span><span class="u">スマホでこのQRコードを</span><span class="u">読み取ってください。</span></p>
+        </div>
+      </div>
+      <span class="hand s12-spiral">Spiral up!!</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>主催：<span class="nw">いい(<span class="eleven">11</span>)チーム</span></p>
+  <p>© 2026 いい(<span class="eleven">11</span>)チーム</p>
+</footer>
+
+<div class="sp-bar" id="sp-bar"><a class="cta" href="#entry"><span class="u">サミットに参加を</span><span class="u">申し込む</span></a></div>
+
+<script>
+/* 申込データの送信先（Google Apps Script のウェブアプリURL）。空のあいだは送信せず、完了画面だけ表示する */
+var GAS_URL = 'https://script.google.com/macros/s/AKfycbwc7JMgfcB7NMM-EcGt94cYAMZGQobyRzy1wnv8zKc2AX5kKJkPOCDhkvYyzicguV2mzA/exec';
+(function(){
+  var form = document.getElementById('entry-form');
+  var thanks = document.getElementById('thanks');
+  var btn = form.querySelector('button[type=submit]');
+  function showErr(input, msg){
+    var el = input.nextElementSibling;
+    if (!el || !el.classList.contains('err')) { el = document.createElement('p'); el.className = 'err'; input.after(el); }
+    el.textContent = msg;
+  }
+  function clearErr(input){
+    var el = input.nextElementSibling;
+    if (el && el.classList.contains('err')) el.remove();
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = form.elements.name, mail = form.elements.email, ok = true;
+    [name, mail].forEach(clearErr);
+    if (!name.value.trim()) { showErr(name, 'お名前を入力してください'); ok = false; }
+    if (!mail.value.trim()) { showErr(mail, 'メールアドレスを入力してください'); ok = false; }
+    else if (!mail.checkValidity()) { showErr(mail, 'メールアドレスの形式をご確認ください'); ok = false; }
+    if (!ok) return;
+    btn.disabled = true;
+    var done = function(){
+      form.hidden = true;
+      thanks.hidden = false;
+      thanks.scrollIntoView({block: 'start'});
+      thanks.focus({preventScroll: true});
+    };
+    if (!GAS_URL) { done(); return; }
+    var body = new URLSearchParams({name: name.value.trim(), email: mail.value.trim()});
+    fetch(GAS_URL, {method: 'POST', mode: 'no-cors', body: body})
+      .then(done)
+      .catch(function(){
+        btn.disabled = false;
+        alert('送信できませんでした。通信環境をご確認のうえ、もう一度お試しください。');
+      });
+  });
+})();
+(function(){
+  var bar = document.getElementById('sp-bar');
+  var targets = [document.getElementById('top'), document.getElementById('entry')];
+  if (!('IntersectionObserver' in window)) return;
+  var vis = {};
+  bar.classList.add('hide');
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(en){ vis[en.target.id] = en.isIntersecting; });
+    bar.classList.toggle('hide', vis.top || vis.entry);
+  }, {threshold: 0});
+  targets.forEach(function(t){ io.observe(t); });
+})();
+</script>
+</body>
+</html>
