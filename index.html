@@ -170,7 +170,13 @@ section{padding:88px 0}
 .form-card label{display:block;text-align:left;font-weight:700;color:var(--navy);font-size:15px;margin-bottom:6px}
 .form-card label .req{display:inline-block;background:#e0484a;color:#fff;font-size:11px;border-radius:4px;padding:0 6px;margin-left:8px;vertical-align:2px}
 .form-card input{width:100%;font:inherit;padding:14px 16px;border:2px solid var(--line);border-radius:12px;margin-bottom:18px;background:var(--bg);color:var(--text)}
-.form-card input:focus{outline:none;border-color:var(--sky-500)}
+.form-card input:focus,.form-card select:focus{outline:none;border-color:var(--sky-500)}
+.form-card label .opt{display:inline-block;background:var(--sky-100);color:var(--muted);font-size:11px;border-radius:4px;padding:0 6px;margin-left:8px;vertical-align:2px}
+.select-wrap{position:relative;margin-bottom:18px}
+.select-wrap::after{content:"";position:absolute;right:18px;top:50%;width:9px;height:9px;border-right:3px solid var(--sky-500);border-bottom:3px solid var(--sky-500);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.form-card select{width:100%;font:inherit;padding:14px 44px 14px 16px;border:2px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text);-webkit-appearance:none;appearance:none;cursor:pointer}
+.form-card select.is-empty{color:var(--muted)}
+.form-card select option{color:var(--text)}
 .form-card .cta{width:100%;margin-top:6px}
 .privacy{font-size:12.5px;color:var(--muted);margin-top:16px;text-align:left}
 .form-note{font-size:13px;margin-top:10px;text-align:left}
@@ -413,6 +419,19 @@ footer .eleven{color:var(--sun)}
       <input id="f-name" name="name" type="text" autocomplete="name" required>
       <label for="f-mail">メールアドレス<span class="req">必須</span></label>
       <input id="f-mail" name="email" type="email" autocomplete="email" required>
+      <label for="f-ref">紹介者<span class="opt">任意</span></label>
+      <div class="select-wrap">
+      <select id="f-ref" name="referrer">
+        <option value="">選択してください</option>
+        <option value="横田潤一郎（じゅんちゃん）">横田潤一郎（じゅんちゃん）</option>
+        <option value="大村知美（ともちゃん）">大村知美（ともちゃん）</option>
+        <option value="前田英志（まえちゃん）">前田英志（まえちゃん）</option>
+        <option value="菅原晴子（パルちゃん）">菅原晴子（パルちゃん）</option>
+        <option value="重本和昭（シゲちゃん）">重本和昭（シゲちゃん）</option>
+        <option value="瀬井倫子（せいのん）">瀬井倫子（せいのん）</option>
+        <option value="吉田宇洋（よっしー）">吉田宇洋（よっしー）</option>
+      </select>
+      </div>
       <button class="cta sm" type="submit"><span class="u">サミットに参加を</span><span class="u">申し込む</span></button>
       <p class="privacy"><span class="u">ご登録の情報は、</span><span class="u">本サミットのご案内・運営のほか、</span><span class="u">主催者および登壇者からの</span><span class="u">お知らせ（イベントやサービスの</span><span class="u">ご案内を含みます）を</span><span class="u">お届けするために使用します。</span><span class="u">ご不要になった場合は、</span><span class="u">いつでも配信を停止できます。</span></p>
       <span class="hand s12-spiral">Spiral up!!</span>
@@ -459,6 +478,9 @@ var GAS_URL = 'https://script.google.com/macros/s/AKfycbwc7JMgfcB7NMM-EcGt94cYAM
     var el = input.nextElementSibling;
     if (el && el.classList.contains('err')) el.remove();
   }
+  var ref = form.elements.referrer;
+  var syncRef = function(){ ref.classList.toggle('is-empty', !ref.value); };
+  ref.addEventListener('change', syncRef); syncRef();
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var name = form.elements.name, mail = form.elements.email, ok = true;
@@ -475,7 +497,7 @@ var GAS_URL = 'https://script.google.com/macros/s/AKfycbwc7JMgfcB7NMM-EcGt94cYAM
       thanks.focus({preventScroll: true});
     };
     if (!GAS_URL) { done(); return; }
-    var body = new URLSearchParams({name: name.value.trim(), email: mail.value.trim()});
+    var body = new URLSearchParams({name: name.value.trim(), email: mail.value.trim(), referrer: form.elements.referrer.value});
     fetch(GAS_URL, {method: 'POST', mode: 'no-cors', body: body})
       .then(done)
       .catch(function(){
