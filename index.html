@@ -419,9 +419,9 @@ footer .eleven{color:var(--sun)}
       <input id="f-name" name="name" type="text" autocomplete="name" required>
       <label for="f-mail">メールアドレス<span class="req">必須</span></label>
       <input id="f-mail" name="email" type="email" autocomplete="email" required>
-      <label for="f-ref">紹介者<span class="opt">任意</span></label>
+      <label for="f-ref">紹介者<span class="req">必須</span></label>
       <div class="select-wrap">
-      <select id="f-ref" name="referrer">
+      <select id="f-ref" name="referrer" required>
         <option value="">選択してください</option>
         <option value="横田潤一郎（じゅんちゃん）">横田潤一郎（じゅんちゃん）</option>
         <option value="大村知美（ともちゃん）">大村知美（ともちゃん）</option>
@@ -430,6 +430,7 @@ footer .eleven{color:var(--sun)}
         <option value="重本和昭（シゲちゃん）">重本和昭（シゲちゃん）</option>
         <option value="瀬井倫子（せいのん）">瀬井倫子（せいのん）</option>
         <option value="吉田宇洋（よっしー）">吉田宇洋（よっしー）</option>
+        <option value="その他">その他</option>
       </select>
       </div>
       <button class="cta sm" type="submit"><span class="u">サミットに参加を</span><span class="u">申し込む</span></button>
@@ -484,10 +485,11 @@ var GAS_URL = 'https://script.google.com/macros/s/AKfycbwc7JMgfcB7NMM-EcGt94cYAM
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var name = form.elements.name, mail = form.elements.email, ok = true;
-    [name, mail].forEach(clearErr);
+    [name, mail, ref.parentNode].forEach(clearErr);
     if (!name.value.trim()) { showErr(name, 'お名前を入力してください'); ok = false; }
     if (!mail.value.trim()) { showErr(mail, 'メールアドレスを入力してください'); ok = false; }
     else if (!mail.checkValidity()) { showErr(mail, 'メールアドレスの形式をご確認ください'); ok = false; }
+    if (!ref.value) { showErr(ref.parentNode, '紹介者を選択してください'); ok = false; }
     if (!ok) return;
     btn.disabled = true;
     var done = function(){
